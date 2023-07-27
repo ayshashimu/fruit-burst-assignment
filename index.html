@@ -7,10 +7,78 @@
      <!-- tailwind and daisy UI -->
      <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
      <script src="https://cdn.tailwindcss.com"></script>
+     <script src="https://kit.fontawesome.com/9312368d61.js" crossorigin="anonymous"></script>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,700&display=swap" rel="stylesheet">
+    <style>
+        .font-lato {
+            font-family: 'Lato', sans-serif;
+        }
+    </style> 
 </head>
-<body>
-    <header></header>
+<body class="font-lato">
+    <!--Header area start-->
+    <header class="container mx-auto">
+        <div class=" flex justify-center my-12">
+            <div class="navbar bg-rose-500 rounded-full">
+                <div class="navbar-start">
+                  <div class="hidden md:flex lg:flex gap-30">
+                    <ul class="menu menu-horizontal text-white text-lg">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="navbar-center ">
+                    <img src="images/logo.png" alt="">
+                  <a class="btn btn-ghost normal-case text-white text-4xl">Fruit Burst</a>
+                </div>
+                <div class="navbar-end hidden md:flex lg:flex justify-right mx-5 my-3">
+                    <div class="relative text-gray-600">
+                        <input type="search" name="search" placeholder="Search" class="bg-white h-10 pl-4 pr-28 py-6 rounded-full text-sm focus:outline-none">
+                        <button type="submit" class="absolute right-0 top-0 mt-3 mr-4">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                      </div>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!--Header area end-->
+
+    <!--main area start-->
     <main></main>
-    <footer></footer>
+    <!--main area end-->
+
+    <!--Footer area start-->
+    <footer class="footer content-center footer-center p-16 h-96 bg-black text-base-content rounded text-white mt-12">
+        <div class="grid grid-flow-col gap-0">
+            <img src="images/logo.png" alt="">
+          <a class="btn btn-ghost normal-case text-white text-4xl">Fruit Burst</a>
+        </div>
+        <div class="grid grid-flow-col gap-10 text-lg">
+            <a class="link link-hover">Home</a> 
+            <a class="link link-hover">About Us</a> 
+            <a class="link link-hover">Shop</a> 
+            <a class="link link-hover">All Fruits</a>
+            <a class="link link-hover">Support</a>
+            <a class="link link-hover">My Account</a>
+        </div> 
+        <div>
+            <div class="grid grid-flow-col gap-10 text-4xl">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+            
+            </div>
+        </div> 
+      </footer>
+    <!--Footer area end-->
 </body>
 </html>
